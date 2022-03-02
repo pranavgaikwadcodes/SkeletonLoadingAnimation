@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.wrapper.theme-dark {
+  background-color: #212121;
+}
+
+.wrapper .theme button {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 400;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.wrapper .card {
+  background-color: #f3f3f3;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 20px;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.wrapper .card.card-dark {
+  background-color: #333;
+}
+
+.wrapper .card .card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .card .card-head .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.wrapper .card .card-head .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.wrapper .card .card-head .title {
+  margin-left: 10px;
+  height: 20px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wrapper .card .card-body {
+  padding-top: 10px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wrapper .card .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .card .btn button {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background-color: #61aef5;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.skeleton {
+  opacity: .8;
+  -webkit-animation: skeleton-loader 1s linear infinite alternate;
+          animation: skeleton-loader 1s linear infinite alternate;
+}
+
+.skeleton.skeleton-text {
+  width: 100%;
+  height: .8rem;
+  margin-bottom: .25rem;
+  border-radius: .25rem;
+}
+
+.skeleton.skeleton-text:first-child {
+  width: 90%;
+}
+
+.skeleton.skeleton-text:last-child {
+  width: 60%;
+}
+
+.skeleton.skeleton-btn {
+  margin: 10px;
+  margin-top: 0px;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 20px;
+  height: 20px;
+  width: 50px;
+}
+
+@-webkit-keyframes skeleton-loader {
+  0% {
+    background-color: #85a0ad;
+  }
+  100% {
+    background-color: #d1dbe0;
+  }
+}
+
+@keyframes skeleton-loader {
+  0% {
+    background-color: #85a0ad;
+  }
+  100% {
+    background-color: #d1dbe0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

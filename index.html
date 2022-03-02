@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Skeleton Loading</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper" id="wrapper">
+
+            <div class="theme">
+                <button onclick="changeTheme()" >Change Theme</button>
+            </div>
+
+            <div class="card" id="card">
+                <div class="card-head">
+                    <div class="image skeleton">
+                        <img src="https://wallpaperaccess.com/full/31192.jpg">
+                    </div>
+                    <div class="title">
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                    <div class="skeleton skeleton-text"></div>
+                </div>
+
+                <div class="btn skeleton skeleton-btn">
+                    <button>Okay!</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function changeTheme(){
+                const getWrapper = document.getElementById('wrapper');
+                const getCard = document.getElementById('card');
+
+                getWrapper.classList.toggle('theme-dark');
+                getCard.classList.toggle('card-dark');
+
+            }
+        </script>
+    </body>
+</html>
